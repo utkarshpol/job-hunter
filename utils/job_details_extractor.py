@@ -18,35 +18,43 @@ Return STRICT JSON only.
 
 
 def extract_job_details(url):
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        page.goto(url)
-        page.wait_for_timeout(4000)
-        text = page.locator("body").inner_text()
-        browser.close()
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            page.goto(url)
+            page.wait_for_timeout(4000)
+            text = page.locator("body").inner_text()
+            browser.close()
 
-    response = ollama.chat(
-        model="gemma3:4b",
-        messages=[
-            {
-                "role": "user",
-                "content":
-                PROMPT + "\n\n" + text[:15000]
-            }
-        ]
-    )
+        response = ollama.chat(
+            model="gemma3:4b",
+            messages=[
+                {
+                    "role": "user",
+                    "content":
+                    PROMPT + "\n\n" + text[:15000]
+                }
+            ]
+        )
 
-    content = response["message"]["content"]
-    parsed = parse_llm_json(content)
+        content = response["message"]["content"]
+        parsed = parse_llm_json(content)
 
-    if(parsed):
-        return parsed
+        if parsed:
+            return parsed
 
-    return {
-        "error": "Could not parse",
-        "raw_output": content
-    }
+        return {
+            "error": "Could not parse",
+            "raw_output": content
+        }
+    except Exception as e:
+        print(f"Job details extraction failed for {url}: {e}")
+        return {
+            "error": "extraction_failed",
+            "message": str(e),
+            "job_url": url
+        }
 
 def parse_llm_json(content):
     try:

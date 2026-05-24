@@ -17,24 +17,52 @@ PHASE3_FILE = "./results/phase3_results.json"
 def save_results(path, data):
 
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-    with open(path,"w",encoding="utf-8") as f:
-        json.dump(data,f,indent=2,ensure_ascii=False)
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        return True
+    except Exception as e:
+        print(f"Failed to save results to {path}: {e}")
+        return False
+
 
 def main():
     print("\nPHASE 1: SCRAPING JOBS")
-    phase1_results = scrape_and_process_jobs()
-    save_results(PHASE1_FILE, phase1_results)
+    try:
+        phase1_results = scrape_and_process_jobs()
+    except Exception as e:
+        print("Phase 1 failed:", e)
+        return
+
+    if not save_results(PHASE1_FILE, phase1_results):
+        return
 
     print("\nPHASE 2: DEDUPLICATION")
-    phase2_results = deduplicate_jobs(phase1_results)
-    save_results(PHASE2_FILE, phase2_results)
+    try:
+        phase2_results = deduplicate_jobs(phase1_results)
+    except Exception as e:
+        print("Phase 2 failed:", e)
+        return
+
+    if not save_results(PHASE2_FILE, phase2_results):
+        return
 
     print("\nPHASE 3: REDDIT INTEL")
-    phase3_results = fetch_reddit_intelligence(phase2_results)
-    save_results(PHASE3_FILE, phase3_results)
+    try:
+        phase3_results = fetch_reddit_intelligence(phase2_results)
+    except Exception as e:
+        print("Phase 3 failed:", e)
+        return
+
+    if not save_results(PHASE3_FILE, phase3_results):
+        return
 
     print("\nPHASE 4: SENDING EMAIL")
-    send_email(phase3_results)
+    try:
+        send_email(phase3_results)
+    except Exception as e:
+        print("Phase 4 failed:", e)
+        return
 
     print("\nPIPELINE COMPLETE")
 

@@ -24,13 +24,20 @@ def load_visited_jobs():
         with open(VISITED_DB, "r", encoding="utf-8") as f:
             data = json.load(f)
         return set(data)
-    except:
+    except Exception as e:
+        print(f"Failed to load visited jobs: {e}")
         return set()
 
 
 def save_visited_jobs(visited_jobs):
-    with open(VISITED_DB,"w", encoding="utf-8") as f:
-        json.dump(list(visited_jobs), f, indent=2)
+    try:
+        VISITED_DB.parent.mkdir(parents=True, exist_ok=True)
+        with open(VISITED_DB, "w", encoding="utf-8") as f:
+            json.dump(list(visited_jobs), f, indent=2)
+        return True
+    except Exception as e:
+        print(f"Failed to save visited jobs: {e}")
+        return False
 
 
 def deduplicate_jobs(all_company_jobs):
@@ -59,5 +66,6 @@ def deduplicate_jobs(all_company_jobs):
                 "company": company,
                 "jobs": unique_jobs
             })
-    save_visited_jobs(visited_jobs)
+    if not save_visited_jobs(visited_jobs):
+        print("Warning: visited jobs could not be persisted.")
     return new_company_jobs

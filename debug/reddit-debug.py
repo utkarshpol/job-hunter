@@ -183,36 +183,36 @@ def default_output():
     }
 
 def main():
+    try:
+        with open(
+            "results/phase2_results.json",
+            "r",
+            encoding="utf-8"
+        ) as f:
+            phase2_results = json.load(f)
 
-    with open(
-        "results/phase2_results.json",
-        "r",
-        encoding="utf-8"
-    ) as f:
-
-        phase2_results = json.load(f)
-
-    results = fetch_reddit_intelligence(
-        phase2_results
-    )
-
-    with open(
-        "results/phase3_results.json",
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        json.dump(
-            results,
-            f,
-            indent=2,
-            ensure_ascii=False
+        results = fetch_reddit_intelligence(
+            phase2_results
         )
 
-    print("\nPHASE 3 COMPLETE")
-    print(
-        f"Saved to {'results/phase3_results.json'}"
-    )
+        with open(
+            "results/phase3_results.json",
+            "w",
+            encoding="utf-8"
+        ) as f:
+            json.dump(
+                results,
+                f,
+                indent=2,
+                ensure_ascii=False
+            )
+
+        print("\nPHASE 3 COMPLETE")
+        print(
+            f"Saved to {'results/phase3_results.json'}"
+        )
+    except Exception as e:
+        print("PHASE 3 DEBUG FAILED:", e)
 
 
 if __name__ == "__main__":

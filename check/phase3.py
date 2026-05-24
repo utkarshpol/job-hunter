@@ -454,36 +454,36 @@ PHASE3_FILE = Path(
 
 
 def main():
+    try:
+        with open(
+            PHASE2_FILE,
+            "r",
+            encoding="utf-8"
+        ) as f:
+            phase2_results = json.load(f)
 
-    with open(
-        PHASE2_FILE,
-        "r",
-        encoding="utf-8"
-    ) as f:
-
-        phase2_results = json.load(f)
-
-    results = fetch_reddit_intelligence(
-        phase2_results
-    )
-
-    with open(
-        PHASE3_FILE,
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        json.dump(
-            results,
-            f,
-            indent=2,
-            ensure_ascii=False
+        results = fetch_reddit_intelligence(
+            phase2_results
         )
 
-    print("\nPHASE 3 COMPLETE")
-    print(
-        f"Saved to {PHASE3_FILE}"
-    )
+        with open(
+            PHASE3_FILE,
+            "w",
+            encoding="utf-8"
+        ) as f:
+            json.dump(
+                results,
+                f,
+                indent=2,
+                ensure_ascii=False
+            )
+
+        print("\nPHASE 3 COMPLETE")
+        print(
+            f"Saved to {PHASE3_FILE}"
+        )
+    except Exception as e:
+        print("PHASE 3 CHECK FAILED:", e)
 
 
 if __name__ == "__main__":

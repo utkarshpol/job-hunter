@@ -5,13 +5,18 @@ def fetch_reddit_intelligence(companies_data):
 
     final_results = []
     for company_data in companies_data:
-        company = company_data["company"]
+        company = company_data.get("company", "")
         updated_jobs = []
-        for job in company_data["jobs"]:
+        for job in company_data.get("jobs", []):
             title = job.get("title", "")
             print(f"\nSearching Reddit for {company} - {title}")
-            snippets = search_reddit_data(company, title)
-            reddit_intel = analyze_with_gemma(company, title, snippets)
+            try:
+                snippets = search_reddit_data(company, title)
+                reddit_intel = analyze_with_gemma(company, title, snippets)
+            except Exception as e:
+                print(f"Reddit intelligence failed for {company} - {title}: {e}")
+                reddit_intel = {}
+            print("found reddit intels:", len(reddit_intel) if hasattr(reddit_intel, '__len__') else 0)
             updated_jobs.append({
                 **job,
                 "reddit_intel": reddit_intel
