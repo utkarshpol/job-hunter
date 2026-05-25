@@ -4,6 +4,7 @@ from urllib.parse import urljoin
 
 def scrape_careers_page(url):
     jobs = []
+    seen = set()
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -31,6 +32,8 @@ def scrape_careers_page(url):
                     if not href or not text:
                         continue
                     full_url = urljoin(url, href)
+                    if(full_url in seen):
+                        continue
                     jobs.append({
                         "title": text,
                         "url": full_url

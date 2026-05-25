@@ -46,7 +46,8 @@ def extract_job_details(url):
 
         return {
             "error": "Could not parse",
-            "raw_output": content
+            "raw_output": content,
+            "job_url": url
         }
     except Exception as e:
         print(f"Job details extraction failed for {url}: {e}")
@@ -73,7 +74,14 @@ def parse_llm_json(content):
         if not match:
             return None
         cleaned = match.group()
-        return json.loads(cleaned)
+        parsed = json.loads(cleaned)
+        if isinstance(parsed, list):
+            if len(parsed) > 0 and isinstance(parsed[0], dict):
+                return parsed[0]
+            return None
+        if isinstance(parsed, dict):
+            return parsed
+        return None
     except Exception as e:
         print("JSON Parse Error:", e)
         return None

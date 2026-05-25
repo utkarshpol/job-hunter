@@ -44,28 +44,31 @@ def deduplicate_jobs(all_company_jobs):
     visited_jobs = load_visited_jobs()
     new_company_jobs = []
     for company_data in all_company_jobs:
+        try:
+            company = company_data["company"]
+            jobs = company_data["jobs"]
 
-        company = company_data["company"]
-        jobs = company_data["jobs"]
+            print(f"\nDeduplicating jobs for {company}...")
 
-        print(f"\nDeduplicating jobs for {company}...")
-
-        unique_jobs = []
-        for job in jobs:
-            title = job.get("title", "")
-            print("Checking job:", title)
-            job_id = create_job_id(company,title)
-            if job_id in visited_jobs:
-                print("Skipping duplicate: ", company, title)
-                continue
-            print("Adding new job:", company, title)
-            unique_jobs.append(job)
-            visited_jobs.add(job_id)
-        if unique_jobs:
-            new_company_jobs.append({
-                "company": company,
-                "jobs": unique_jobs
-            })
+            unique_jobs = []
+            for job in jobs:
+                title = job.get("title", "")
+                print("Checking job:", title)
+                job_id = create_job_id(company, title)
+                if job_id in visited_jobs:
+                    print("Skipping duplicate: ", company, title)
+                    continue
+                print("Adding new job:", company, title)
+                unique_jobs.append(job)
+                visited_jobs.add(job_id)
+            if unique_jobs:
+                new_company_jobs.append({
+                    "company": company,
+                    "jobs": unique_jobs
+                })
+        except Exception as e:
+            print(f"Deduplication failed for company entry: {e}")
+            continue
     if not save_visited_jobs(visited_jobs):
         print("Warning: visited jobs could not be persisted.")
     return new_company_jobs

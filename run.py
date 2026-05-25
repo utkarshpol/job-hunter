@@ -28,41 +28,40 @@ def save_results(path, data):
 
 def main():
     print("\nPHASE 1: SCRAPING JOBS")
+    phase1_results = []
     try:
         phase1_results = scrape_and_process_jobs()
     except Exception as e:
         print("Phase 1 failed:", e)
-        return
 
     if not save_results(PHASE1_FILE, phase1_results):
-        return
+        print("Warning: phase 1 results could not be saved.")
 
     print("\nPHASE 2: DEDUPLICATION")
+    phase2_results = []
     try:
         phase2_results = deduplicate_jobs(phase1_results)
     except Exception as e:
         print("Phase 2 failed:", e)
-        return
 
     if not save_results(PHASE2_FILE, phase2_results):
-        return
+        print("Warning: phase 2 results could not be saved.")
 
     print("\nPHASE 3: REDDIT INTEL")
+    phase3_results = []
     try:
         phase3_results = fetch_reddit_intelligence(phase2_results)
     except Exception as e:
         print("Phase 3 failed:", e)
-        return
 
     if not save_results(PHASE3_FILE, phase3_results):
-        return
+        print("Warning: phase 3 results could not be saved.")
 
     print("\nPHASE 4: SENDING EMAIL")
     try:
         send_email(phase3_results)
     except Exception as e:
         print("Phase 4 failed:", e)
-        return
 
     print("\nPIPELINE COMPLETE")
 

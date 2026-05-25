@@ -1,1 +1,199 @@
-{}
+[
+  {
+    "company": "Airbus",
+    "jobs": [
+      {
+        "title": "ACOLS41-INTERN",
+        "experience": "Student",
+        "skills": [
+          "Awareness of compliance risks",
+          "Integrity"
+        ],
+        "location": "Tianjin Area",
+        "description": "Supporting on time and efficiently a manager or a team in operational, planning or organisational tasks. This job requires an awareness of any potential compliance risks and a commitment to act with integrity, as the foundation for the Company’s success, reputation and sustainable growth.",
+        "job_url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS41-INTERN_JR10416655",
+        "reddit_intel": {
+          "estimated_ctc": "14.5LPA (with variable component)",
+          "legitimacy": "High",
+          "interview_difficulty": "Low",
+          "work_culture": "Cost-focused, potentially lacking growth opportunities (based on TCS feedback), emphasis on maintenance and support roles rather than core software development.",
+          "important_notes": [
+            "Airbus's software development is primarily focused on supporting aircraft manufacturing and maintenance, not core software development like MAANG.",
+            "Salaries are significantly lower due to the airline industry's lower profitability and a focus on cost-saving measures.",
+            "The role (ACOLS41-INTERN) likely involves maintaining existing systems (CRMs, payroll) rather than developing new, revenue-generating software.",
+            "TCS offers are generally considered lowballing for experienced developers (4 years) and may not reflect market rates.",
+            "The work environment at TCS, as described, can be challenging with limited growth opportunities and variable pay issues."
+          ],
+          "sources": [
+            "https://www.reddit.com/r/developersIndia/comments/1kkxjix/should_i_accept_tcs_offer_or_look_for_other/",
+            "https://www.reddit.com/r/developersIndia/comments/1cjsxf2/why_do_software_devs_in_airline_company_like/"
+          ]
+        }
+      },
+      {
+        "title": "Calculateur Structure / Stress Engineer",
+        "experience": "Minimum of 5 years’ experience in analysis of primary metallic structure stress",
+        "skills": [
+          "Catia (consultation)",
+          "NASTRAN",
+          "PATRAN",
+          "VBA Programming",
+          "Calculation of sheet metal and machined parts",
+          "Communication (written and oral)",
+          "Knowledge of Airbus Atlantic, Bombardier, and Airbus Canada processes and methods"
+        ],
+        "location": "Montreal Area",
+        "description": "The stress engineer will be responsible for ensuring the analysis of stresses meets certification requirements for the primary structure.  This includes supporting technical decision-making, preparing technical deliverables, and ensuring compliance with Airbus Atlantic and client requirements.  The role requires a Bachelor’s/Master’s degree in Mechanical or Aerospace Engineering and the ability to work both independently and as part of a team.",
+        "job_url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Montreal-Area/Calculateur-en-ingnierie---Stress-engineer_JR10416642",
+        "reddit_intel": {
+          "estimated_ctc": "Unknown",
+          "legitimacy": "High",
+          "interview_difficulty": "High",
+          "work_culture": "Unknown",
+          "important_notes": [
+            "The discussions highlight concerns about data privacy and security, particularly regarding tracking user behavior and data anonymization.",
+            "Reverse engineering and API analysis are valued skills, as evidenced by questions about learning resources.",
+            "Emphasis on questioning code, thorough analysis, and avoiding poorly defined requirements are key takeaways for engineers."
+          ],
+          "sources": [
+            "https://www.reddit.com/r/developersIndia/comments/1rfd76n/top_30_list_of_companies_i_will_focused_for_sde_2/",
+            "https://www.reddit.com/r/india/comments/rlz3tc/help_my_brother_has_been_unemployed_for_2_years/",
+            "https://www.reddit.com/r/cscareerquestions/comments/cdp9yz/another_data_point_on_industry_hire_in_the_bay/",
+            "https://www.reddit.com/r/developersIndia/comments/1srgcv1/need_advice_on_salary_negotiation_for_sr_aiml/",
+            "https://www.reddit.com/r/cscareerquestions/comments/qc50hf/please_dont_neglect_your_communication_skills_in/",
+            "https://www.reddit.com/r/cscareerquestions/comments/1ss5q7f/im_quitting_tomorrow/",
+            "https://www.reddit.com/r/india/comments/1qo62ae/avoid_no_broker_relocation_experience_not_worthy/",
+            "https://www.reddit.com/r/india/comments/15ct0ah/rant_should_i_quit_larsen_and_toubro_the_company/",
+            "https://www.reddit.com/r/developersIndia/comments/1r25mhi/how_a_zomato_feature_enables_stalking_which_they/",
+            "https://www.reddit.com/r/cscareerquestions/comments/1t89s4f/no_you_are_not_cooked_the_golden_age_is_coming_ai/",
+            "https://www.reddit.com/r/india/comments/wp9jdb/my_experience_getting_employment_visa_blue_card/",
+            "https://www.reddit.com/r/india/comments/5xrzb4/arranged_marriage_fiasco_handbook_for_females/",
+            "https://www.reddit.com/r/india/comments/81r29c/your_onestop_guide_to_emigrating_long_term_to/",
+            "https://www.reddit.com/r/developersIndia/comments/1kdv8eh/random_nuggets_of_wisdom_from_a_software_engineer/",
+            "https://www.reddit.com/r/cscareerquestions/comments/ia8lnc/people_who_complain_about_not_finding_jobs_in/",
+            "https://www.reddit.com/r/developersIndia/comments/1t5nrmv/2025_grad_struggling_to_get_interview_calls_even/"
+          ]
+        }
+      },
+      {
+        "title": "Gestionnaire de Programme - Spécialiste en Gestion de Configuration",
+        "experience": "Minimum of 5 years",
+        "skills": [
+          "Google Suite Mastery",
+          "Project Governance",
+          "Change Management",
+          "Client Communication",
+          "Process Improvement",
+          "Data Analysis"
+        ],
+        "location": "Montreal Area",
+        "description": "The Programme Manager is responsible for ensuring that change projects are executed within the budget, scope, and schedule, and for managing change requests and change projects with clients. They are also responsible for ensuring project performance and supporting the entire program by implementing effective governance and tooling processes. Key responsibilities include: establishing and maintaining governance for the proper oversight of change projects; preparing documents and presentations summarizing program status for client meetings; managing client priorities and expectations; ensuring project performance, respecting timelines, budgets, and deliverables quality; defining and deploying a harmonized project management system; supporting the entire program by implementing microprocesses and management tools; analyzing, improving, and redefining existing processes as needed; verifying and auditing the validity, accuracy, and quality of datasets and modsums before publication; and supporting the study office in understanding client requirements to eliminate anomalies and resolve inconsistencies.",
+        "job_url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Montreal-Area/Gestionnaire-de-programme_JR10416640",
+        "reddit_intel": {
+          "estimated_ctc": "Unknown",
+          "legitimacy": "High - Based on a GitHub repository with a list of companies and a tool leveraging AI for job search.",
+          "interview_difficulty": "Moderate - Airbus is a large, established company, so interviews will likely be rigorous. The use of AI tools could potentially streamline the initial screening process.",
+          "work_culture": "Unknown - The Reddit discussions offer mixed opinions and primarily focus on the job search process rather than detailed insights into Airbus's culture.",
+          "important_notes": [
+            "The GitHub repository provides a starting point for identifying potential companies, but lacks detailed information about each company's culture, values, and hiring practices.",
+            "The Copilot CLI tool adds a layer of automation to the job search process, potentially increasing efficiency but also requiring technical proficiency.",
+            "Several users express concerns about the quality and completeness of the company list, suggesting the need for further research and validation.",
+            "The negative experiences shared by some users regarding early career setbacks highlight the importance of carefully evaluating work environments and considering the potential impact of short-term employment decisions."
+          ],
+          "sources": [
+            "https://www.reddit.com/r/india/comments/49chyl/annual_procurement_from_india_exceeds_500_million/",
+            "https://www.reddit.com/r/cscareerquestions/comments/pvhw5f/switching_from_qa_automation_to_full_stack_server/",
+            "https://www.reddit.com/r/cscareerquestions/comments/crn311/im_starting_to_think_web_dev_isnt_for_everyone/",
+            "https://www.reddit.com/r/developersIndia/comments/1ppj14l/what_is_wrong_with_my_resume_im_targetting_roles/",
+            "https://www.reddit.com/r/india/comments/o1qglh/analysing_the_ndhms_health_data_management_policy/",
+            "https://www.reddit.com/r/cscareerquestions/comments/b3w1gg/2_year_update_my_journey_tips_29_gpa_at_a_small/",
+            "https://www.reddit.com/r/india/comments/717dlb/debunked_do_the_maths_indias_first_bullet_train/",
+            "https://www.reddit.com/r/developersIndia/comments/1qhth95/what_is_the_resume_lacking_i_cant_understand_can/",
+            "https://www.reddit.com/r/india/comments/s8ksj6/marital_rape_is_rape_criminalize_it/",
+            "https://www.reddit.com/r/developersIndia/comments/pzqhwk/list_of_productbased_companies_and_startups_that/",
+            "https://www.reddit.com/r/cscareerquestions/comments/raoica/success_story_pivoting_into_cs_at_32_and_going/",
+            "https://www.reddit.com/r/developersIndia/comments/1shm7mm/i_turned_github_copilot_cli_into_a_full_job/"
+          ]
+        }
+      },
+      {
+        "title": "Superviseur Méthodes (Temporaire)",
+        "experience": "Minimum of 5 to 10 years' experience in methods, with a solid experience in the aerospace sector and support to medium-volume production.",
+        "skills": [
+          "Coordination and organization of team activities",
+          "Respect of priorities",
+          "Delivery of deliverables within cost, quality, and time objectives",
+          "Tracking and communication of performance indicators (OTD, EVM, FTR)",
+          "Respect of technical scope according to customer requirements and program needs",
+          "Technical support and decision-making assistance",
+          "Employee development and individual meetings",
+          "Team cohesion",
+          "Project preparation and presentation",
+          "Meeting management and file maintenance",
+          "Status reporting",
+          "Budget management",
+          "Risk management planning",
+          "Problem-solving and turnaround plans",
+          "Continuous improvement of project management processes",
+          "Promotion of health and safety and company values",
+          "Reading and interpreting technical drawings",
+          "Knowledge of aerospace standards",
+          "Creation and interpretation of manufacturing ranges",
+          "Mastery of tolerance and dimensioning principles"
+        ],
+        "location": "Montreal Area",
+        "description": "The supervisor methods will have under his responsibility a team of methods agents who report directly to him. The supervisor methods will report to the methods manager. In his functions, he will have as main task to be in contact with the production sector to ensure technical support to production operators and he will have to master a assembly line in terms of industrialization and assembly.  He will coordinate and organize the various activities of his team. He will ensure that priorities are well respected by the team that he is responsible for. He will ensure that his team delivers all their deliverables within cost, quality and time objectives. He will put in place, maintain, follow and communicate the indicators that serve to demonstrate the performance of the team (ex: OTD, EVM, FTR). He will ensure that the technical scope is well respected according to customer requirements and the needs of the program, manufacturer, as well as industrialization. He will support as needed his team on the technical issues and during decision-making. He will watch the development of his employees and carry out individual meetings with them. He will organize and maintain a good cohesion within the group. He will prepare and present projects for validation with different functions. He will direct the meetings and maintain up to date the various files of follow-up. He will prepare and present progress reports at different levels of management. He will ensure the respect of the budgets of his department. He will develop risk management plans including mitigation plans. He will participate in problem-solving and turnaround plans. He will participate in the continuous improvement of our project management processes. He will promote health and safety at work as well as company values.",
+        "job_url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Montreal-Area/Superviseur-Mthodes--Temporaire-_JR10416639",
+        "reddit_intel": {
+          "estimated_ctc": "Unknown",
+          "legitimacy": "Unknown",
+          "interview_difficulty": "Unknown",
+          "work_culture": "Unknown",
+          "important_notes": [],
+          "sources": []
+        }
+      },
+      {
+        "title": "A220 Supply Chain Quality Manager - Propulsion",
+        "experience": "Ten (10) years of experience in the aerospace or automotive industry in industrial planning, supply chain management, quality management, and continuous improvement",
+        "skills": [
+          "Advanced Product Quality Planning",
+          "Risk Management",
+          "Continuous Improvement (Lean Six Sigma)",
+          "Industrial Capacity and Quality Assessments",
+          "Relationship Building",
+          "Problem-Solving",
+          "Supplier Management",
+          "Root Cause Analysis",
+          "E-Learning",
+          "Certifications (e.g., Certified Project Management Professional, Lean Six Sigma Certified)"
+        ],
+        "location": "Hartford, CT",
+        "description": "Airbus Commercial Aircraft is looking for a Supply Chain Quality Manager - Propulsion to join our Procurement department in Hartford, CT. The Procurement team's mission is to acquire indirect goods and services for Airbus commercial aircraft and helicopters, playing a major role in generating value and supplying to the overall performance of the company. Our team members ensure on-time delivery and on-quality of equipment and systems, drawing on their expertise in Industrial, Operations & Quality Management, and strong relationship building skills to problem-solve and proactively mitigate supply chain issues.  Responsible for On Time delivery of the propulsion systems, working with supplier Program, Industrial, Supply Chain, and Quality leadership. Analyzing supplier's production value stream providing feedback on improvement opportunities to de-risk performance to plan. Collaborate with responsible Airbus employees across multiple functional organizations in the United States, Europe and suppliers to secure the On-Time and On-Quality Delivery of propulsion systems.  Consolidate and maintain an outlook of key industrial, quality, supply chain, and Risks & Opportunities to drive action plans with the support of the responsible propulsion suppliers. Integration of Supply Chain activities both with other regional procurement offices and central Propulsion Operations Procurement teams. Integrated supplier pictures of overall readiness towards required rates and review the Red/Amber during Control Tower and Industrial Reviews. Management of deviation to defined industrial targets communicated to all partners and corrective actions implemented with Supplier through root cause and eradication methods to mitigate reoccurrence. A Bachelor's Degree in aerospace or industrial engineering, supply chain management, logistics management, or an equivalent combination of education and experience required.",
+        "job_url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Herndon-Area-VA/A220-Supply-Chain-Quality-Manager---Propulsion--Hartford--CT-_JR10371441",
+        "reddit_intel": {
+          "estimated_ctc": "55,999 - 255,999 (per month - indicative range based on Reddit comments)",
+          "legitimacy": "High - Multiple users reporting receiving offer letters from Airbus for the A220 Supply Chain Quality Manager - Propulsion role.",
+          "interview_difficulty": "Unknown",
+          "work_culture": "Unknown",
+          "important_notes": [
+            "Significant number of open tabs is a recurring theme, potentially indicating a high-pressure or demanding environment.",
+            "Offers are being presented with a salary range of 55,999 - 2,55,999, suggesting a competitive compensation package.",
+            "Users are sharing offer letters found on platforms like ewalk.in, indicating a potentially streamlined recruitment process."
+          ],
+          "sources": [
+            "https://www.reddit.com/r/developersIndia/comments/1bp5n1t/got_an_email_saying_i_was_selected_for_an/",
+            "https://www.reddit.com/r/india/comments/12fajwp/did_you_know_that_most_corporate_hospitals_have/",
+            "https://www.reddit.com/r/developersIndia/comments/1svkhkf/need_resume_review_not_getting_shortlisted_for/",
+            "https://www.reddit.com/r/cscareerquestions/comments/14sboli/what_are_your_thoughts_on_the_big_tech_comp_divide/",
+            "https://www.reddit.com/r/cscareerquestions/comments/brjexy/have_you_ever_wondered_what_the_hiring_process/",
+            "https://www.reddit.com/r/cscareerquestions/comments/12ttehw/daily_chat_thread_april_21_2023/",
+            "https://www.reddit.com/r/developersIndia/comments/1l380gr/got_rejected_from_google_need_advice_to_improve/",
+            "https://www.reddit.com/r/india/comments/wiyzsp/why_cab_aggregators_dont_work_in_india_any_more/",
+            "https://www.reddit.com/r/india/comments/basjie/r_lets_discuss_the_bjp_and_congress_manifestos/"
+          ]
+        }
+      }
+    ]
+  }
+]
